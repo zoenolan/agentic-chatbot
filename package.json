@@ -10,22 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:joinzien/api-chatbot$.git"
+    "url": "git@github.com:zoenolan/api-chatbot.git"
   },
   "keywords": [
-    "chatbot", "aiml", "API",
+    "chatbot",
+    "aiml",
+    "api"
   ],
   "author": "Zoe Nolan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zoenolan/api-chatbot$/issues"
+    "url": "https://github.com/zoenolan/api-chatbot/issues"
   },
-  "homepage": "https://github.com/zoenolan/api-chatbot$#readme",
+  "homepage": "https://github.com/zoenolan/api-chatbot#readme",
   "devDependencies": {
     "eslint": "^8.45.0"
   },
   "dependencies": {
-    "aiml-high": "github:joinzien/aiml-high",
+    "aiml-high": "github:joinzien/aiml-high"
   },
   "engines": {
     "node": ">=18.0.0"
