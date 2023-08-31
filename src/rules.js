@@ -3,7 +3,7 @@
 "use strict";
 
 const AimlHigh = require("aiml-high");
-const apiCall = require("./api.js");
+const api = require("./api.js");
 
 const externalCallName = "external-call";
 const externalParametersName = "external-parameters";
@@ -67,7 +67,7 @@ class RulesBased {
           }
     
           // Call the external API
-          const result = await apiCall(functionName, parameters);
+          const result = await api.apiCall(functionName, parameters);
     
           // Delete the call parameters
           this.interpreter.removeState(externalCallName);
