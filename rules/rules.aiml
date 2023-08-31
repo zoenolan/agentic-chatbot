@@ -35,7 +35,6 @@
   <category>
     <pattern>SQUARENUMBER</pattern>  
     <template>
-      <get name="lhs" />
       <think><set name = "external-call">maths-mul</set></think>   
       <think><set name = "external-parameters">lhs,rhs</set></think>   
       <think><set name = "external-return">maths-result</set></think>
