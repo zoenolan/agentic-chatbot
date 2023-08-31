@@ -35,16 +35,16 @@
   <category>
     <pattern>SQUARENUMBER</pattern>  
     <template>
-      <think><set name="rhs"><get name="lhs" /></set></think>
+      <get name="lhs" />
       <think><set name = "external-call">maths-mul</set></think>   
       <think><set name = "external-parameters">lhs,rhs</set></think>   
       <think><set name = "external-return">maths-result</set></think>
-      <think><set name = "external-message">MATHSRESULT</set></think>      
+      <think><set name = "external-message">SQUARERESULT</set></think>      
     </template>                       
   </category>  
 
   <category>
-    <pattern>MATHSRESULT</pattern>  
+    <pattern>SQUARERESULT</pattern>  
     <template>
       <get name="lhs" /> squared is <get name="maths-result" />
     </template>                       
@@ -54,6 +54,7 @@
     <pattern>SQUARE *</pattern>
     <template>
       <think><set name="lhs"><star/></set></think>
+      <think><set name="rhs"><star/></set></think>
       <srai>SQUARENUMBER</srai>
     </template>
   </category>

@@ -36,22 +36,18 @@ class RulesBased {
         keepProcessing = false;
     
         // Get the response
-        reply = await findAnswerPromise(this.interpreter, input).then((answer) => {
+        reply = await findAnswerPromise(this.interpreter, message).then((answer) => {
           return answer;
         });
     
         // Check if we need to make an external call
         const functionName = this.interpreter.getState(externalCallName);
-        if (functionName !== undefined) {
-          if (reply !== undefined && reply !== "undefined") {
-            progressCallback(reply);
-          }
-    
+        if (functionName !== undefined) {  
           // Get the rest of the external call parameters
           const parameterList = this.interpreter.getState(externalParametersName);
           const returnVariable = this.interpreter.getState(externalReturnName);
           const newMessage = this.interpreter.getState(externalMessageName);
-    
+
           // Get the values for the parameters
           const rawParameters = parameterList.trim();
     
