@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/zoenolan/api-chatbot#readme",
   "devDependencies": {
-    "eslint": "^9.25.1"
+    "eslint": "^9.26.0"
   },
   "dependencies": {
     "aiml-high": "github:joinzien/aiml-high"
