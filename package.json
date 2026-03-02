@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "aiml-high": "github:joinzien/aiml-high",
-    "globals": "^17.3.0"
+    "globals": "^17.4.0"
   },
   "engines": {
     "node": ">=18.0.0"
